@@ -1,6 +1,6 @@
 document.getElementById("redeem-btn").addEventListener("click", function () {
     const code = document.getElementById("gift-code").value;
-    const correctCode = "REGALO2024"; // Cambia aquí el código correcto
+    const correctCode = "1"; // Cambia aquí el código correcto
 
     if (code === correctCode) {
         const redeemContainer = document.querySelector(".redeem-container");
@@ -31,7 +31,7 @@ document.getElementById("redeem-btn").addEventListener("click", function () {
             setTimeout(() => {
                 prizeContainer.classList.add("hidden"); // Ocultar la página de premio
                 finalContainer.classList.remove("hidden");
-                finalContainer.classList.add("visible");
+                finalContainer.style.display = 'flex';
             }, 1000); // Espera hasta que termine el fade-out
         }, 0);
 
